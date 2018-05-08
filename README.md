@@ -29,9 +29,14 @@ git push
 
 ### Submit a pull request to the main mmtf-hackathon-2018 repository
 
-Click on the pull request tab on your forked mmtf-hackathon-2018 repository.
+Click on the pull request tab on your forked mmtf-hackathon-2018 repository:
+![Pull request tab](./figures/pull_request.png)
 
-![Pull request](./figures/pull_request)
+Add new pull request:
+![Pull request add](./figures/pull_request_2.png)
 
-Add new pull request.
-![Pull request 2](./figures/pull_request_2)
+Compare changes:
+![Pull request compare](./figures/pull_request_3.png)
+
+Create pull request:
+![Pull request create](./figures/pull_request_4.png)
