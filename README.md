@@ -1,4 +1,4 @@
-#mmtf-hackathon-2018
+# MMTF Hackathon 2018
 Hackathon projects repository for MMTF Workshop 2018
 
 ## Submit your project to this repository
