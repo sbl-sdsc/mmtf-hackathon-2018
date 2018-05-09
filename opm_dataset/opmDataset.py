@@ -5,14 +5,18 @@ import tempfile
 from zipfile import ZipFile
 from io import BytesIO
 from pyspark.sql import SparkSession
+import pandas as pd
 
 def get_dataset():
     ## PARSING CODE HERE!
-
+    url='http://opm.phar.umich.edu/proteins.php'
+    opm_html = requests.get(self.url).content 
+    pd_list = pd.read_html(opm_html) 
+    opm_df = pd_list[-1]
 
     # save data to a temporary file (Dataset csv reader requires a input
     # file!)
-    tempFileName = _save_temp_file(unzipped)
+    tempFileName = _save_temp_file(opm_df)
 
     #load temporary CSV file to Spark dataset
     dataset = _read_csv(tempFileName)
@@ -40,13 +44,13 @@ def _decode_as_zip_input_stream(content):
             in zipfile.open(zipfile.namelist()[0]).readlines()]
 
 
-def _save_temp_file(unzipped):
+def _save_temp_file(data_frame):
     '''Saves tabular report as a temporary CSV file
 
     Attributes
     ----------
-    unzipped : list
-       list of unzipped content
+    data_frame : pandas DataFrame
+       pandas DataFrame
 
     Returns
     -------
@@ -54,8 +58,7 @@ def _save_temp_file(unzipped):
        path to the tempfile
     '''
     tempFile = tempfile.NamedTemporaryFile(delete=False)
-    with open (tempFile.name, "w") as t:
-        t.writelines(unzipped)
+    data_frame.to_csv(tempFile.name)
     return tempFile.name
 
 
