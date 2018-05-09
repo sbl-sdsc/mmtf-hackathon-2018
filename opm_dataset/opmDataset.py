@@ -10,9 +10,11 @@ import pandas as pd
 def get_dataset():
     ## PARSING CODE HERE!
     url='http://opm.phar.umich.edu/proteins.php'
-    opm_html = requests.get(self.url).content 
+    opm_html = requests.get(url).content 
     pd_list = pd.read_html(opm_html) 
     opm_df = pd_list[-1]
+    opm_df['PDB ID'] = opm_df['PDB ID'].apply(lambda x: x.upper())
+    # opm_df.drop(['_c0'])
 
     # save data to a temporary file (Dataset csv reader requires a input
     # file!)
@@ -58,7 +60,7 @@ def _save_temp_file(data_frame):
        path to the tempfile
     '''
     tempFile = tempfile.NamedTemporaryFile(delete=False)
-    data_frame.to_csv(tempFile.name)
+    data_frame.to_csv(tempFile.name, index=False)
     return tempFile.name
 
 
