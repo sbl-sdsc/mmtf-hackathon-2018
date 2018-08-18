@@ -1,0 +1,9 @@
+jupyter contrib nbextension install --user
+jupyter nbextension enable codefolding/main
+jupyter labextension install jupyterlab_3dmol
+
+mkdir resources
+cd resources
+mkdir mmtf_full_sample
+cd mmtf_full_sample
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00000
