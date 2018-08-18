@@ -7,3 +7,25 @@ cd resources
 mkdir mmtf_full_sample
 cd mmtf_full_sample
 curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00000
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00001
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00002
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00003
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00004
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00005
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00006
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_full_sample/part-00007
+cd ..
+mkdir mmtf_reduced_sample
+cd mmtf_reduced_sample
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00000
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00001
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00002
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00003
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00004
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00005
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00006
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00007
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00008
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00009
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00010
+curl -O https://raw.githubusercontent.com/sbl-sdsc/mmtf-pyspark/master/resources/mmtf_reduced_sample/part-00011
